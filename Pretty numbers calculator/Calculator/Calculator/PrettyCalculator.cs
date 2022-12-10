@@ -35,7 +35,7 @@ public class PrettyCalculator
     private long CalculateSumCount(int length, int sum, int numBase)
     {
         if (length == 1)
-            return (sum < numBase && sum >= 0) ? 1 : 0;
+            return Convert.ToInt32(sum < numBase && sum >= 0); //true - 1, false - 0 
 
         long count = 0;
 
